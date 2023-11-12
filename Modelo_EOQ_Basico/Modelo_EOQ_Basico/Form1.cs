@@ -181,158 +181,183 @@ namespace Modelo_EOQ_Basico
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            //FORMULA PARA SACAR EL COSTO TOTAL
+            if (rbtnCostoTotal.Checked)
+            {
+                formulaCostoTotal();
+            }
 
-            //string texto1 = txtCant1.Text;
-            //string texto2 = txtCant2.Text;
-            //string texto3 = txtCant3.Text;
-            //string texto4 = txtCant4.Text;
-            //string texto5 = txtCant5.Text;
-            //if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && !string.IsNullOrWhiteSpace(texto3)
-            //    && !string.IsNullOrWhiteSpace(texto4) && !string.IsNullOrWhiteSpace(texto5) && rbtnCostoTotal.Checked)
-            //{
-            //    try
-            //    {
-            //        double num1 = Convert.ToDouble(txtCant1.Text);
-            //        double num2 = Convert.ToDouble(txtCant2.Text);
-            //        double num3 = Convert.ToDouble(txtCant3.Text);
-            //        double num4 = Convert.ToDouble(txtCant4.Text);
-            //        double num5 = Convert.ToDouble(txtCant5.Text);
-            //        double resultado = (((num1 / num3) * num4) + ((num3 / 2) * num5));
-            //        lblResultado.Text = "$" + Math.Ceiling(resultado);
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        MessageBox.Show("Ingresa una cantidad valida en el campo de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            if (rbtnVolOrden.Checked)
+            {
+                formulaVolumenOrden();
+            }
 
-            //FORMULA PARA SACAR EL VOLUMEN DE LA ORDEN
+            if (rbtnNumeroOrdenes.Checked)
+            {
+                formulaNumOrdenesAño();
+            }
 
-            //string texto1 = txtCant1.Text;
-            //string texto2 = txtCant2.Text;
-            //string texto3 = txtCant3.Text;
-            //if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && !string.IsNullOrWhiteSpace(texto3)
-            //    && rbtnVolOrden.Checked)
-            //{
-            //    try
-            //    {
-            //        double num1 = Convert.ToDouble(txtCant1.Text);
-            //        double num2 = Convert.ToDouble(txtCant2.Text);
-            //        double num3 = Convert.ToDouble(txtCant3.Text);
-            //        double resultado = Math.Sqrt(2 * num1 * num2 / num3);
-            //        lblResultado.Text = Math.Ceiling(resultado).ToString();
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        MessageBox.Show("Ingresa una cantidad valida en el campo de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            if (rbtnTiempoOrdenes.Checked)
+            {
+                formulaTiempoOrdenes();
+            }
 
-            //FORMULA PARA SACAR EL NUMERO DE ORDENES POR AÑO
+            if (rbtnDemandaDia.Checked) {
+                formulaDemandaDia();
+            }
 
-            //string texto1 = txtCant1.Text;
-            //string texto2 = txtCant2.Text;
-            //if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && rbtnNumeroOrdenes.Checked)
-            //{
-            //    try
-            //    {
-            //        double num1 = Convert.ToDouble(txtCant1.Text);
-            //        double num2 = Convert.ToDouble(txtCant2.Text);
-            //        double resultado = (num1/num2);
-            //        lblResultado.Text = Math.Ceiling(resultado).ToString();
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        MessageBox.Show("Ingresa una cantidad valida en el campo de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
-            //FORMULA PARA SACAR EL TIEMPO DE LAS ORDENES
-
-            //string texto1 = txtCant1.Text;
-            //string texto2 = txtCant2.Text;
-            //if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && rbtnTiempoOrdenes.Checked)
-            //{
-            //    try
-            //    {
-            //        double num1 = Convert.ToDouble(txtCant1.Text);
-            //        double num2 = Convert.ToDouble(txtCant2.Text);
-            //        double resultado = (num1 / num2);
-            //        lblResultado.Text = Math.Ceiling(resultado).ToString();
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        MessageBox.Show("Ingresa una cantidad valida en el campo de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
-            //FORMULA PARA SACAR LA DEMANDA POR DIA
-
-            //string texto1 = txtCant1.Text;
-            //string texto2 = txtCant2.Text;
-            //if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && rbtnDemandaDia.Checked)
-            //{
-            //    try
-            //    {
-            //        double num1 = Convert.ToDouble(txtCant1.Text);
-            //        double num2 = Convert.ToDouble(txtCant2.Text);
-            //        double resultado = (num1 / num2);
-            //        lblResultado.Text = "$" + Math.Ceiling(resultado);
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        MessageBox.Show("Ingresa una cantidad valida en el campo de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
-            //FORMULA PARA SACAR EL PUNTO DE REORDEN
-
-            //string texto1 = txtCant1.Text;
-            //string texto2 = txtCant2.Text;
-            //if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && rbtnPuntoReorden.Checked)
-            //{
-            //    try
-            //    {
-            //        double num1 = Convert.ToDouble(txtCant1.Text);
-            //        double num2 = Convert.ToDouble(txtCant2.Text);
-            //        double resultado = (num1 * num2);
-            //        lblResultado.Text = Math.Ceiling(resultado).ToString();
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        MessageBox.Show("Ingresa una cantidad valida en el campo de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            if (rbtnPuntoReorden.Checked)
+            {
+                formulaPuntoReorden();
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             borrarCajasTexto();
+        }
+
+        //Aqui estan los metodos para sacar los resultados con las formulas
+        public void formulaCostoTotal() {
+            string texto1 = txtCant1.Text;
+            string texto2 = txtCant2.Text;
+            string texto3 = txtCant3.Text;
+            string texto4 = txtCant4.Text;
+            string texto5 = txtCant5.Text;
+            if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && !string.IsNullOrWhiteSpace(texto3)
+                && !string.IsNullOrWhiteSpace(texto4) && !string.IsNullOrWhiteSpace(texto5))
+            {
+                try
+                {
+                    double num1 = Convert.ToDouble(txtCant1.Text);
+                    double num2 = Convert.ToDouble(txtCant2.Text);
+                    double num3 = Convert.ToDouble(txtCant3.Text);
+                    double num4 = Convert.ToDouble(txtCant4.Text);
+                    double num5 = Convert.ToDouble(txtCant5.Text);
+                    double resultado = (num1 * num2 + ((num1 / num3) * num4) + ((num3 / 2) * num5));
+                    lblResultado.Text = "$" + Math.Ceiling(resultado);
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Ingresa una cantidad valida en los campos de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void formulaVolumenOrden() {
+            string texto1 = txtCant1.Text;
+            string texto2 = txtCant2.Text;
+            string texto3 = txtCant3.Text;
+            if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2) && !string.IsNullOrWhiteSpace(texto3))
+            {
+                try
+                {
+                    double num1 = Convert.ToDouble(txtCant1.Text);
+                    double num2 = Convert.ToDouble(txtCant2.Text);
+                    double num3 = Convert.ToDouble(txtCant3.Text);
+                    double resultado = Math.Sqrt(2 * num1 * num2 / num3);
+                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Ingresa una cantidad valida en los campos de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void formulaNumOrdenesAño() {
+            string texto1 = txtCant1.Text;
+            string texto2 = txtCant2.Text;
+            if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2))
+            {
+                try
+                {
+                    double num1 = Convert.ToDouble(txtCant1.Text);
+                    double num2 = Convert.ToDouble(txtCant2.Text);
+                    double resultado = (num1 / num2);
+                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Ingresa una cantidad valida en los campos de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void formulaTiempoOrdenes() {
+            string texto1 = txtCant1.Text;
+            string texto2 = txtCant2.Text;
+            if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2))
+            {
+                try
+                {
+                    double num1 = Convert.ToDouble(txtCant1.Text);
+                    double num2 = Convert.ToDouble(txtCant2.Text);
+                    double resultado = (num1 / num2);
+                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Ingresa una cantidad valida en los campos de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void formulaDemandaDia() {
+            string texto1 = txtCant1.Text;
+            string texto2 = txtCant2.Text;
+            if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2))
+            {
+                try
+                {
+                    double num1 = Convert.ToDouble(txtCant1.Text);
+                    double num2 = Convert.ToDouble(txtCant2.Text);
+                    double resultado = (num1 / num2);
+                    lblResultado.Text = Math.Ceiling(resultado) + " unidades";
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Ingresa una cantidad valida en los campos de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void formulaPuntoReorden()
+        {
+            string texto1 = txtCant1.Text;
+            string texto2 = txtCant2.Text;
+            if (!string.IsNullOrWhiteSpace(texto1) && !string.IsNullOrWhiteSpace(texto2))
+            {
+                try
+                {
+                    double num1 = Convert.ToDouble(txtCant1.Text);
+                    double num2 = Convert.ToDouble(txtCant2.Text);
+                    double resultado = (num1 * num2);
+                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Ingresa una cantidad valida en los campos de texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
