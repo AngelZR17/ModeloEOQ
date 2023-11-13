@@ -127,4 +127,17 @@ como deben llenarse los campos para el correcto funcionamiento.</value>
 del campo de texto, esa es la variable que se debe revisar para realizar las demas operaciones, a continuacion se 
 muestran las formulas para poder obtener otros resultados:</value>
   </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Costo total (TC)
+Demanda anual (D)
+Costo por unidad (C)
+Costo por preparacion (K)
+Tiempo de entrega (L)
+Costo anual de mantener inventario (h)
+Punto de reorden (R)
+Tiempo de ordenes (T)
+Numero de ordenes por año (N)
+Volumen de la orden (Q)
+Demanda por dia (d)</value>
+  </data>
 </root>
