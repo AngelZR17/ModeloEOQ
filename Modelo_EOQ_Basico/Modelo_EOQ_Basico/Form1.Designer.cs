@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verLaAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeModeloEOQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.btnLimpiar = new MaterialSkin.Controls.MaterialButton();
             this.btnCalcular = new MaterialSkin.Controls.MaterialButton();
@@ -65,7 +61,7 @@
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.lblResultado = new MaterialSkin.Controls.MaterialLabel();
             this.lbl7 = new MaterialSkin.Controls.MaterialLabel();
-            this.menuStrip1.SuspendLayout();
+            this.materialFloatingActionButton1 = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.materialCard1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Card1.SuspendLayout();
@@ -77,41 +73,6 @@
             this.materialCard2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ayudaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(4, 98);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1442, 33);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verLaAyudaToolStripMenuItem,
-            this.acercaDeModeloEOQToolStripMenuItem});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // verLaAyudaToolStripMenuItem
-            // 
-            this.verLaAyudaToolStripMenuItem.Image = global::Modelo_EOQ_Basico.Properties.Resources.icon_ayuda;
-            this.verLaAyudaToolStripMenuItem.Name = "verLaAyudaToolStripMenuItem";
-            this.verLaAyudaToolStripMenuItem.Size = new System.Drawing.Size(300, 34);
-            this.verLaAyudaToolStripMenuItem.Text = "Ver la ayuda";
-            // 
-            // acercaDeModeloEOQToolStripMenuItem
-            // 
-            this.acercaDeModeloEOQToolStripMenuItem.Image = global::Modelo_EOQ_Basico.Properties.Resources.icon_acerca;
-            this.acercaDeModeloEOQToolStripMenuItem.Name = "acercaDeModeloEOQToolStripMenuItem";
-            this.acercaDeModeloEOQToolStripMenuItem.Size = new System.Drawing.Size(300, 34);
-            this.acercaDeModeloEOQToolStripMenuItem.Text = "Acerca de Modelo EOQ";
-            // 
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -120,12 +81,12 @@
             this.materialCard1.Controls.Add(this.groupBox1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(26, 157);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.materialCard1.Location = new System.Drawing.Point(17, 77);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.materialCard1.Size = new System.Drawing.Size(572, 702);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Size = new System.Drawing.Size(381, 456);
             this.materialCard1.TabIndex = 3;
             // 
             // btnLimpiar
@@ -135,8 +96,8 @@
             this.btnLimpiar.Depth = 0;
             this.btnLimpiar.HighEmphasis = true;
             this.btnLimpiar.Icon = null;
-            this.btnLimpiar.Location = new System.Drawing.Point(283, 621);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnLimpiar.Location = new System.Drawing.Point(189, 404);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLimpiar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -155,8 +116,8 @@
             this.btnCalcular.Depth = 0;
             this.btnCalcular.HighEmphasis = true;
             this.btnCalcular.Icon = null;
-            this.btnCalcular.Location = new System.Drawing.Point(119, 621);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.btnCalcular.Location = new System.Drawing.Point(79, 404);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnCalcular.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -177,11 +138,9 @@
             this.groupBox1.Controls.Add(this.rbtnVolOrden);
             this.groupBox1.Controls.Add(this.rbtnCostoTotal);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(27, 26);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(18, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(519, 569);
+            this.groupBox1.Size = new System.Drawing.Size(346, 370);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Selecciona una opcion a calcular";
@@ -190,16 +149,16 @@
             // 
             this.rbtnPuntoReorden.AutoSize = true;
             this.rbtnPuntoReorden.Depth = 0;
-            this.rbtnPuntoReorden.Location = new System.Drawing.Point(4, 331);
+            this.rbtnPuntoReorden.Location = new System.Drawing.Point(3, 215);
             this.rbtnPuntoReorden.Margin = new System.Windows.Forms.Padding(0);
             this.rbtnPuntoReorden.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtnPuntoReorden.MouseState = MaterialSkin.MouseState.HOVER;
             this.rbtnPuntoReorden.Name = "rbtnPuntoReorden";
             this.rbtnPuntoReorden.Ripple = true;
-            this.rbtnPuntoReorden.Size = new System.Drawing.Size(155, 37);
+            this.rbtnPuntoReorden.Size = new System.Drawing.Size(180, 37);
             this.rbtnPuntoReorden.TabIndex = 5;
             this.rbtnPuntoReorden.TabStop = true;
-            this.rbtnPuntoReorden.Text = "Punto de reorden";
+            this.rbtnPuntoReorden.Text = "Punto de reorden (R)";
             this.rbtnPuntoReorden.UseVisualStyleBackColor = true;
             this.rbtnPuntoReorden.CheckedChanged += new System.EventHandler(this.rbtnPuntoReorden_CheckedChanged);
             // 
@@ -207,16 +166,16 @@
             // 
             this.rbtnDemandaDia.AutoSize = true;
             this.rbtnDemandaDia.Depth = 0;
-            this.rbtnDemandaDia.Location = new System.Drawing.Point(4, 274);
+            this.rbtnDemandaDia.Location = new System.Drawing.Point(3, 178);
             this.rbtnDemandaDia.Margin = new System.Windows.Forms.Padding(0);
             this.rbtnDemandaDia.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtnDemandaDia.MouseState = MaterialSkin.MouseState.HOVER;
             this.rbtnDemandaDia.Name = "rbtnDemandaDia";
             this.rbtnDemandaDia.Ripple = true;
-            this.rbtnDemandaDia.Size = new System.Drawing.Size(157, 37);
+            this.rbtnDemandaDia.Size = new System.Drawing.Size(181, 37);
             this.rbtnDemandaDia.TabIndex = 4;
             this.rbtnDemandaDia.TabStop = true;
-            this.rbtnDemandaDia.Text = "Demanda por dia";
+            this.rbtnDemandaDia.Text = "Demanda por dia (d)";
             this.rbtnDemandaDia.UseVisualStyleBackColor = true;
             this.rbtnDemandaDia.CheckedChanged += new System.EventHandler(this.rbtnDemandaDia_CheckedChanged);
             // 
@@ -224,16 +183,16 @@
             // 
             this.rbtnTiempoOrdenes.AutoSize = true;
             this.rbtnTiempoOrdenes.Depth = 0;
-            this.rbtnTiempoOrdenes.Location = new System.Drawing.Point(4, 217);
+            this.rbtnTiempoOrdenes.Location = new System.Drawing.Point(3, 141);
             this.rbtnTiempoOrdenes.Margin = new System.Windows.Forms.Padding(0);
             this.rbtnTiempoOrdenes.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtnTiempoOrdenes.MouseState = MaterialSkin.MouseState.HOVER;
             this.rbtnTiempoOrdenes.Name = "rbtnTiempoOrdenes";
             this.rbtnTiempoOrdenes.Ripple = true;
-            this.rbtnTiempoOrdenes.Size = new System.Drawing.Size(170, 37);
+            this.rbtnTiempoOrdenes.Size = new System.Drawing.Size(195, 37);
             this.rbtnTiempoOrdenes.TabIndex = 3;
             this.rbtnTiempoOrdenes.TabStop = true;
-            this.rbtnTiempoOrdenes.Text = "Tiempo de ordenes";
+            this.rbtnTiempoOrdenes.Text = "Tiempo de ordenes (T)";
             this.rbtnTiempoOrdenes.UseVisualStyleBackColor = true;
             this.rbtnTiempoOrdenes.CheckedChanged += new System.EventHandler(this.rbtnTiempoOrdenes_CheckedChanged);
             // 
@@ -241,16 +200,16 @@
             // 
             this.rbtnNumeroOrdenes.AutoSize = true;
             this.rbtnNumeroOrdenes.Depth = 0;
-            this.rbtnNumeroOrdenes.Location = new System.Drawing.Point(4, 160);
+            this.rbtnNumeroOrdenes.Location = new System.Drawing.Point(3, 104);
             this.rbtnNumeroOrdenes.Margin = new System.Windows.Forms.Padding(0);
             this.rbtnNumeroOrdenes.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtnNumeroOrdenes.MouseState = MaterialSkin.MouseState.HOVER;
             this.rbtnNumeroOrdenes.Name = "rbtnNumeroOrdenes";
             this.rbtnNumeroOrdenes.Ripple = true;
-            this.rbtnNumeroOrdenes.Size = new System.Drawing.Size(230, 37);
+            this.rbtnNumeroOrdenes.Size = new System.Drawing.Size(256, 37);
             this.rbtnNumeroOrdenes.TabIndex = 2;
             this.rbtnNumeroOrdenes.TabStop = true;
-            this.rbtnNumeroOrdenes.Text = "Numero de ordenes por año";
+            this.rbtnNumeroOrdenes.Text = "Numero de ordenes por año (N)";
             this.rbtnNumeroOrdenes.UseVisualStyleBackColor = true;
             this.rbtnNumeroOrdenes.CheckedChanged += new System.EventHandler(this.rbtnNumeroOrdenes_CheckedChanged);
             // 
@@ -258,16 +217,16 @@
             // 
             this.rbtnVolOrden.AutoSize = true;
             this.rbtnVolOrden.Depth = 0;
-            this.rbtnVolOrden.Location = new System.Drawing.Point(4, 103);
+            this.rbtnVolOrden.Location = new System.Drawing.Point(3, 67);
             this.rbtnVolOrden.Margin = new System.Windows.Forms.Padding(0);
             this.rbtnVolOrden.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtnVolOrden.MouseState = MaterialSkin.MouseState.HOVER;
             this.rbtnVolOrden.Name = "rbtnVolOrden";
             this.rbtnVolOrden.Ripple = true;
-            this.rbtnVolOrden.Size = new System.Drawing.Size(163, 37);
+            this.rbtnVolOrden.Size = new System.Drawing.Size(189, 37);
             this.rbtnVolOrden.TabIndex = 1;
             this.rbtnVolOrden.TabStop = true;
-            this.rbtnVolOrden.Text = "Volumen de orden";
+            this.rbtnVolOrden.Text = "Volumen de orden (Q)";
             this.rbtnVolOrden.UseVisualStyleBackColor = true;
             this.rbtnVolOrden.CheckedChanged += new System.EventHandler(this.rbtnVolOrden_CheckedChanged);
             // 
@@ -275,16 +234,16 @@
             // 
             this.rbtnCostoTotal.AutoSize = true;
             this.rbtnCostoTotal.Depth = 0;
-            this.rbtnCostoTotal.Location = new System.Drawing.Point(4, 46);
+            this.rbtnCostoTotal.Location = new System.Drawing.Point(3, 30);
             this.rbtnCostoTotal.Margin = new System.Windows.Forms.Padding(0);
             this.rbtnCostoTotal.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtnCostoTotal.MouseState = MaterialSkin.MouseState.HOVER;
             this.rbtnCostoTotal.Name = "rbtnCostoTotal";
             this.rbtnCostoTotal.Ripple = true;
-            this.rbtnCostoTotal.Size = new System.Drawing.Size(117, 37);
+            this.rbtnCostoTotal.Size = new System.Drawing.Size(152, 37);
             this.rbtnCostoTotal.TabIndex = 0;
             this.rbtnCostoTotal.TabStop = true;
-            this.rbtnCostoTotal.Text = "Costo Total";
+            this.rbtnCostoTotal.Text = "Costo Total (TC)";
             this.rbtnCostoTotal.UseVisualStyleBackColor = true;
             this.rbtnCostoTotal.CheckedChanged += new System.EventHandler(this.rbtnCostoTotal_CheckedChanged);
             // 
@@ -296,12 +255,12 @@
             this.Card1.Controls.Add(this.lbl1);
             this.Card1.Depth = 0;
             this.Card1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Card1.Location = new System.Drawing.Point(615, 157);
-            this.Card1.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.Card1.Location = new System.Drawing.Point(410, 77);
+            this.Card1.Margin = new System.Windows.Forms.Padding(14);
             this.Card1.MouseState = MaterialSkin.MouseState.HOVER;
             this.Card1.Name = "Card1";
-            this.Card1.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.Card1.Size = new System.Drawing.Size(807, 145);
+            this.Card1.Padding = new System.Windows.Forms.Padding(14);
+            this.Card1.Size = new System.Drawing.Size(538, 94);
             this.Card1.TabIndex = 4;
             this.Card1.Visible = false;
             // 
@@ -309,7 +268,7 @@
             // 
             this.checkBoxDias1.AutoSize = true;
             this.checkBoxDias1.Depth = 0;
-            this.checkBoxDias1.Location = new System.Drawing.Point(504, 2);
+            this.checkBoxDias1.Location = new System.Drawing.Point(336, 1);
             this.checkBoxDias1.Margin = new System.Windows.Forms.Padding(0);
             this.checkBoxDias1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBoxDias1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -331,8 +290,7 @@
             this.txtCant1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCant1.Depth = 0;
             this.txtCant1.HideSelection = true;
-            this.txtCant1.Location = new System.Drawing.Point(26, 58);
-            this.txtCant1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCant1.Location = new System.Drawing.Point(17, 38);
             this.txtCant1.MaxLength = 32767;
             this.txtCant1.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCant1.Name = "txtCant1";
@@ -343,7 +301,7 @@
             this.txtCant1.SelectionLength = 0;
             this.txtCant1.SelectionStart = 0;
             this.txtCant1.ShortcutsEnabled = true;
-            this.txtCant1.Size = new System.Drawing.Size(756, 71);
+            this.txtCant1.Size = new System.Drawing.Size(504, 46);
             this.txtCant1.TabIndex = 5;
             this.txtCant1.TabStop = false;
             this.txtCant1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -354,8 +312,7 @@
             this.lbl1.AutoSize = true;
             this.lbl1.Depth = 0;
             this.lbl1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lbl1.Location = new System.Drawing.Point(26, 22);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl1.Location = new System.Drawing.Point(17, 14);
             this.lbl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(27, 19);
@@ -370,12 +327,12 @@
             this.Card2.Controls.Add(this.lbl2);
             this.Card2.Depth = 0;
             this.Card2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Card2.Location = new System.Drawing.Point(615, 312);
-            this.Card2.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.Card2.Location = new System.Drawing.Point(410, 178);
+            this.Card2.Margin = new System.Windows.Forms.Padding(14);
             this.Card2.MouseState = MaterialSkin.MouseState.HOVER;
             this.Card2.Name = "Card2";
-            this.Card2.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.Card2.Size = new System.Drawing.Size(807, 145);
+            this.Card2.Padding = new System.Windows.Forms.Padding(14);
+            this.Card2.Size = new System.Drawing.Size(538, 94);
             this.Card2.TabIndex = 6;
             this.Card2.Visible = false;
             // 
@@ -383,7 +340,7 @@
             // 
             this.checkBoxDias2.AutoSize = true;
             this.checkBoxDias2.Depth = 0;
-            this.checkBoxDias2.Location = new System.Drawing.Point(504, 2);
+            this.checkBoxDias2.Location = new System.Drawing.Point(336, 1);
             this.checkBoxDias2.Margin = new System.Windows.Forms.Padding(0);
             this.checkBoxDias2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.checkBoxDias2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -405,8 +362,7 @@
             this.txtCant2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCant2.Depth = 0;
             this.txtCant2.HideSelection = true;
-            this.txtCant2.Location = new System.Drawing.Point(26, 58);
-            this.txtCant2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCant2.Location = new System.Drawing.Point(17, 38);
             this.txtCant2.MaxLength = 32767;
             this.txtCant2.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCant2.Name = "txtCant2";
@@ -417,7 +373,7 @@
             this.txtCant2.SelectionLength = 0;
             this.txtCant2.SelectionStart = 0;
             this.txtCant2.ShortcutsEnabled = true;
-            this.txtCant2.Size = new System.Drawing.Size(756, 71);
+            this.txtCant2.Size = new System.Drawing.Size(504, 46);
             this.txtCant2.TabIndex = 5;
             this.txtCant2.TabStop = false;
             this.txtCant2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -428,8 +384,7 @@
             this.lbl2.AutoSize = true;
             this.lbl2.Depth = 0;
             this.lbl2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lbl2.Location = new System.Drawing.Point(26, 22);
-            this.lbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl2.Location = new System.Drawing.Point(17, 14);
             this.lbl2.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(27, 19);
@@ -443,12 +398,12 @@
             this.Card3.Controls.Add(this.lbl3);
             this.Card3.Depth = 0;
             this.Card3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Card3.Location = new System.Drawing.Point(615, 468);
-            this.Card3.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.Card3.Location = new System.Drawing.Point(410, 279);
+            this.Card3.Margin = new System.Windows.Forms.Padding(14);
             this.Card3.MouseState = MaterialSkin.MouseState.HOVER;
             this.Card3.Name = "Card3";
-            this.Card3.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.Card3.Size = new System.Drawing.Size(807, 145);
+            this.Card3.Padding = new System.Windows.Forms.Padding(14);
+            this.Card3.Size = new System.Drawing.Size(538, 94);
             this.Card3.TabIndex = 7;
             this.Card3.Visible = false;
             // 
@@ -460,8 +415,7 @@
             this.txtCant3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCant3.Depth = 0;
             this.txtCant3.HideSelection = true;
-            this.txtCant3.Location = new System.Drawing.Point(26, 58);
-            this.txtCant3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCant3.Location = new System.Drawing.Point(17, 38);
             this.txtCant3.MaxLength = 32767;
             this.txtCant3.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCant3.Name = "txtCant3";
@@ -472,7 +426,7 @@
             this.txtCant3.SelectionLength = 0;
             this.txtCant3.SelectionStart = 0;
             this.txtCant3.ShortcutsEnabled = true;
-            this.txtCant3.Size = new System.Drawing.Size(756, 71);
+            this.txtCant3.Size = new System.Drawing.Size(504, 46);
             this.txtCant3.TabIndex = 5;
             this.txtCant3.TabStop = false;
             this.txtCant3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -483,8 +437,7 @@
             this.lbl3.AutoSize = true;
             this.lbl3.Depth = 0;
             this.lbl3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lbl3.Location = new System.Drawing.Point(26, 22);
-            this.lbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl3.Location = new System.Drawing.Point(17, 14);
             this.lbl3.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(27, 19);
@@ -498,12 +451,12 @@
             this.Card4.Controls.Add(this.lbl4);
             this.Card4.Depth = 0;
             this.Card4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Card4.Location = new System.Drawing.Point(615, 623);
-            this.Card4.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.Card4.Location = new System.Drawing.Point(410, 380);
+            this.Card4.Margin = new System.Windows.Forms.Padding(14);
             this.Card4.MouseState = MaterialSkin.MouseState.HOVER;
             this.Card4.Name = "Card4";
-            this.Card4.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.Card4.Size = new System.Drawing.Size(807, 145);
+            this.Card4.Padding = new System.Windows.Forms.Padding(14);
+            this.Card4.Size = new System.Drawing.Size(538, 94);
             this.Card4.TabIndex = 8;
             this.Card4.Visible = false;
             // 
@@ -515,8 +468,7 @@
             this.txtCant4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCant4.Depth = 0;
             this.txtCant4.HideSelection = true;
-            this.txtCant4.Location = new System.Drawing.Point(26, 58);
-            this.txtCant4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCant4.Location = new System.Drawing.Point(17, 38);
             this.txtCant4.MaxLength = 32767;
             this.txtCant4.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCant4.Name = "txtCant4";
@@ -527,7 +479,7 @@
             this.txtCant4.SelectionLength = 0;
             this.txtCant4.SelectionStart = 0;
             this.txtCant4.ShortcutsEnabled = true;
-            this.txtCant4.Size = new System.Drawing.Size(756, 71);
+            this.txtCant4.Size = new System.Drawing.Size(504, 46);
             this.txtCant4.TabIndex = 5;
             this.txtCant4.TabStop = false;
             this.txtCant4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -538,8 +490,7 @@
             this.lbl4.AutoSize = true;
             this.lbl4.Depth = 0;
             this.lbl4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lbl4.Location = new System.Drawing.Point(26, 22);
-            this.lbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl4.Location = new System.Drawing.Point(17, 14);
             this.lbl4.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(27, 19);
@@ -553,12 +504,12 @@
             this.Card5.Controls.Add(this.lbl5);
             this.Card5.Depth = 0;
             this.Card5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Card5.Location = new System.Drawing.Point(615, 778);
-            this.Card5.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.Card5.Location = new System.Drawing.Point(410, 481);
+            this.Card5.Margin = new System.Windows.Forms.Padding(14);
             this.Card5.MouseState = MaterialSkin.MouseState.HOVER;
             this.Card5.Name = "Card5";
-            this.Card5.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.Card5.Size = new System.Drawing.Size(807, 145);
+            this.Card5.Padding = new System.Windows.Forms.Padding(14);
+            this.Card5.Size = new System.Drawing.Size(538, 94);
             this.Card5.TabIndex = 9;
             this.Card5.Visible = false;
             // 
@@ -570,8 +521,7 @@
             this.txtCant5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCant5.Depth = 0;
             this.txtCant5.HideSelection = true;
-            this.txtCant5.Location = new System.Drawing.Point(26, 58);
-            this.txtCant5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCant5.Location = new System.Drawing.Point(17, 38);
             this.txtCant5.MaxLength = 32767;
             this.txtCant5.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCant5.Name = "txtCant5";
@@ -582,7 +532,7 @@
             this.txtCant5.SelectionLength = 0;
             this.txtCant5.SelectionStart = 0;
             this.txtCant5.ShortcutsEnabled = true;
-            this.txtCant5.Size = new System.Drawing.Size(756, 71);
+            this.txtCant5.Size = new System.Drawing.Size(504, 46);
             this.txtCant5.TabIndex = 5;
             this.txtCant5.TabStop = false;
             this.txtCant5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -593,8 +543,7 @@
             this.lbl5.AutoSize = true;
             this.lbl5.Depth = 0;
             this.lbl5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lbl5.Location = new System.Drawing.Point(26, 22);
-            this.lbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl5.Location = new System.Drawing.Point(17, 14);
             this.lbl5.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(27, 19);
@@ -608,12 +557,12 @@
             this.Card6.Controls.Add(this.lbl6);
             this.Card6.Depth = 0;
             this.Card6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Card6.Location = new System.Drawing.Point(615, 934);
-            this.Card6.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.Card6.Location = new System.Drawing.Point(410, 582);
+            this.Card6.Margin = new System.Windows.Forms.Padding(14);
             this.Card6.MouseState = MaterialSkin.MouseState.HOVER;
             this.Card6.Name = "Card6";
-            this.Card6.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.Card6.Size = new System.Drawing.Size(807, 145);
+            this.Card6.Padding = new System.Windows.Forms.Padding(14);
+            this.Card6.Size = new System.Drawing.Size(538, 94);
             this.Card6.TabIndex = 10;
             this.Card6.Visible = false;
             // 
@@ -625,8 +574,7 @@
             this.txtCant6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCant6.Depth = 0;
             this.txtCant6.HideSelection = true;
-            this.txtCant6.Location = new System.Drawing.Point(26, 58);
-            this.txtCant6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCant6.Location = new System.Drawing.Point(17, 38);
             this.txtCant6.MaxLength = 32767;
             this.txtCant6.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCant6.Name = "txtCant6";
@@ -637,7 +585,7 @@
             this.txtCant6.SelectionLength = 0;
             this.txtCant6.SelectionStart = 0;
             this.txtCant6.ShortcutsEnabled = true;
-            this.txtCant6.Size = new System.Drawing.Size(756, 71);
+            this.txtCant6.Size = new System.Drawing.Size(504, 46);
             this.txtCant6.TabIndex = 5;
             this.txtCant6.TabStop = false;
             this.txtCant6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -648,8 +596,7 @@
             this.lbl6.AutoSize = true;
             this.lbl6.Depth = 0;
             this.lbl6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.lbl6.Location = new System.Drawing.Point(26, 22);
-            this.lbl6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl6.Location = new System.Drawing.Point(17, 14);
             this.lbl6.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(27, 19);
@@ -663,12 +610,12 @@
             this.materialCard2.Controls.Add(this.lbl7);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(26, 875);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(21, 22, 21, 22);
+            this.materialCard2.Location = new System.Drawing.Point(17, 544);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(21, 22, 21, 22);
-            this.materialCard2.Size = new System.Drawing.Size(572, 203);
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Size = new System.Drawing.Size(381, 132);
             this.materialCard2.TabIndex = 11;
             // 
             // lblResultado
@@ -677,8 +624,7 @@
             this.lblResultado.Depth = 0;
             this.lblResultado.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblResultado.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.lblResultado.Location = new System.Drawing.Point(25, 81);
-            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultado.Location = new System.Drawing.Point(17, 53);
             this.lblResultado.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(20, 41);
@@ -691,20 +637,33 @@
             this.lbl7.Depth = 0;
             this.lbl7.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lbl7.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.lbl7.Location = new System.Drawing.Point(25, 22);
-            this.lbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl7.Location = new System.Drawing.Point(17, 14);
             this.lbl7.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(39, 29);
             this.lbl7.TabIndex = 6;
             this.lbl7.Text = "lbl7";
             // 
+            // materialFloatingActionButton1
+            // 
+            this.materialFloatingActionButton1.Depth = 0;
+            this.materialFloatingActionButton1.Icon = global::Modelo_EOQ_Basico.Properties.Resources.icon_help;
+            this.materialFloatingActionButton1.Location = new System.Drawing.Point(891, 616);
+            this.materialFloatingActionButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFloatingActionButton1.Name = "materialFloatingActionButton1";
+            this.materialFloatingActionButton1.Size = new System.Drawing.Size(56, 56);
+            this.materialFloatingActionButton1.TabIndex = 6;
+            this.materialFloatingActionButton1.Text = "materialFloatingActionButton1";
+            this.materialFloatingActionButton1.UseVisualStyleBackColor = true;
+            this.materialFloatingActionButton1.Click += new System.EventHandler(this.materialFloatingActionButton1_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1450, 1097);
+            this.ClientSize = new System.Drawing.Size(968, 693);
+            this.Controls.Add(this.materialFloatingActionButton1);
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.Card6);
             this.Controls.Add(this.Card5);
@@ -713,16 +672,11 @@
             this.Controls.Add(this.Card2);
             this.Controls.Add(this.Card1);
             this.Controls.Add(this.materialCard1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(4, 98, 4, 5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modelo EOQ";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -742,15 +696,10 @@
             this.materialCard2.ResumeLayout(false);
             this.materialCard2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verLaAyudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acercaDeModeloEOQToolStripMenuItem;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private System.Windows.Forms.GroupBox groupBox1;
         private MaterialSkin.Controls.MaterialRadioButton rbtnDemandaDia;
@@ -784,6 +733,7 @@
         private MaterialSkin.Controls.MaterialButton btnLimpiar;
         private MaterialSkin.Controls.MaterialLabel lblResultado;
         private MaterialSkin.Controls.MaterialLabel lbl7;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton1;
     }
 }
 

@@ -359,5 +359,17 @@ namespace Modelo_EOQ_Basico
                 MessageBox.Show("No pueden haber campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void materialFloatingActionButton1_Click(object sender, EventArgs e)
+        {
+            frmAyuda frmAyuda = new frmAyuda();
+            frmAyuda.Show();
+            this.Close();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
     }
 }
