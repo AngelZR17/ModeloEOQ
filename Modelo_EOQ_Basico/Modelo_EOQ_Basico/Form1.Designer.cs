@@ -63,8 +63,8 @@
             this.txtCant6 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.lbl6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
-            this.lbl7 = new MaterialSkin.Controls.MaterialLabel();
             this.lblResultado = new MaterialSkin.Controls.MaterialLabel();
+            this.lbl7 = new MaterialSkin.Controls.MaterialLabel();
             this.menuStrip1.SuspendLayout();
             this.materialCard1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -671,20 +671,6 @@
             this.materialCard2.Size = new System.Drawing.Size(572, 203);
             this.materialCard2.TabIndex = 11;
             // 
-            // lbl7
-            // 
-            this.lbl7.AutoSize = true;
-            this.lbl7.Depth = 0;
-            this.lbl7.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lbl7.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.lbl7.Location = new System.Drawing.Point(25, 22);
-            this.lbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(39, 29);
-            this.lbl7.TabIndex = 6;
-            this.lbl7.Text = "lbl7";
-            // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
@@ -698,6 +684,20 @@
             this.lblResultado.Size = new System.Drawing.Size(20, 41);
             this.lblResultado.TabIndex = 7;
             this.lblResultado.Text = "0";
+            // 
+            // lbl7
+            // 
+            this.lbl7.AutoSize = true;
+            this.lbl7.Depth = 0;
+            this.lbl7.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lbl7.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.lbl7.Location = new System.Drawing.Point(25, 22);
+            this.lbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(39, 29);
+            this.lbl7.TabIndex = 6;
+            this.lbl7.Text = "lbl7";
             // 
             // Form1
             // 

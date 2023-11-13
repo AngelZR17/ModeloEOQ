@@ -258,7 +258,7 @@ namespace Modelo_EOQ_Basico
                     double num2 = Convert.ToDouble(txtCant2.Text);
                     double num3 = Convert.ToDouble(txtCant3.Text);
                     double resultado = Math.Sqrt(2 * num1 * num2 / num3);
-                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                    lblResultado.Text = Math.Ceiling(resultado) + " unidades";
                 }
                 catch (FormatException)
                 {
@@ -280,7 +280,7 @@ namespace Modelo_EOQ_Basico
                     double num1 = Convert.ToDouble(txtCant1.Text);
                     double num2 = Convert.ToDouble(txtCant2.Text);
                     double resultado = (num1 / num2);
-                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                    lblResultado.Text = Math.Ceiling(resultado) + " ordenes al año";
                 }
                 catch (FormatException)
                 {
@@ -302,7 +302,7 @@ namespace Modelo_EOQ_Basico
                     double num1 = Convert.ToDouble(txtCant1.Text);
                     double num2 = Convert.ToDouble(txtCant2.Text);
                     double resultado = (num1 / num2);
-                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                    lblResultado.Text = Math.Ceiling(resultado) + " dias";
                 }
                 catch (FormatException)
                 {
@@ -347,7 +347,7 @@ namespace Modelo_EOQ_Basico
                     double num1 = Convert.ToDouble(txtCant1.Text);
                     double num2 = Convert.ToDouble(txtCant2.Text);
                     double resultado = (num1 * num2);
-                    lblResultado.Text = Math.Ceiling(resultado).ToString();
+                    lblResultado.Text = Math.Ceiling(resultado) + " dias";
                 }
                 catch (FormatException)
                 {
